@@ -5,6 +5,7 @@ import {RouterModule} from "@angular/router";
 import {
   CreateEventComponent,
   CreateSessionComponent,
+  DurationPipe,
   EventDetailsComponent,
   EventRouteActivator,
   EventService,
@@ -39,7 +40,8 @@ import {CollapsibleWellComponent} from "./common/collapsible-well.component";
     Error404Component,
     CreateSessionComponent,
     SessionListComponent,
-    CollapsibleWellComponent
+    CollapsibleWellComponent,
+    DurationPipe
   ],
   providers: [
     EventService,
