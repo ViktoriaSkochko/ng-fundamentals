@@ -1,5 +1,5 @@
 import {EventService} from "../shared/event.service";
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
 import {IEvent, ISession} from "../shared/index";
 
@@ -20,7 +20,7 @@ import {IEvent, ISession} from "../shared/index";
     }
   `]
 })
-export class EventDetailsComponent {
+export class EventDetailsComponent implements OnInit {
   event: IEvent
   addMode: boolean
   filterBy: string = 'all';
