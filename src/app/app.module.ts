@@ -16,14 +16,14 @@ import {
 } from './events/index'
 import {EventsAppComponent} from './events-app.component';
 import {NavBarComponent} from "./nav/navbar.component";
-import {Toastr, TOASTR_TOKEN} from "./common/toastr.service";
+import {JQ_TOKEN, Toastr, TOASTR_TOKEN, CollapsibleWellComponent} from "./common/index";
 import {appRoutes} from "./routes";
 import {Error404Component} from "./errors/404.component";
 import {AuthService} from "./user/auth.service";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {CollapsibleWellComponent} from "./common/collapsible-well.component";
 
 let toastr: Toastr = window['toastr'];
+let jQuery = window['$'];
 
 @NgModule({
   imports: [
