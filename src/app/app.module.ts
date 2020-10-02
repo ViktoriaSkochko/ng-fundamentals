@@ -12,7 +12,8 @@ import {
   EventsListComponent,
   EventsListResolver,
   EventThumbnailComponent,
-  SessionListComponent
+  SessionListComponent,
+  UpvoteComponent
 } from './events/index'
 import {EventsAppComponent} from './events-app.component';
 import {NavBarComponent} from "./nav/navbar.component";
@@ -52,7 +53,8 @@ let jQuery = window['$'];
     CollapsibleWellComponent,
     DurationPipe,
     SimpleModalComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    UpvoteComponent
   ],
   providers: [
     EventService,
