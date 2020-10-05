@@ -13,7 +13,8 @@ import {
   EventsListResolver,
   EventThumbnailComponent,
   SessionListComponent,
-  UpvoteComponent
+  UpvoteComponent,
+  VoterService
 } from './events/index'
 import {EventsAppComponent} from './events-app.component';
 import {NavBarComponent} from "./nav/navbar.component";
@@ -63,6 +64,7 @@ let jQuery = window['$'];
     EventRouteActivator,
     EventsListResolver,
     AuthService,
+    VoterService,
     {
       provide: 'canDeactivateCreateEvent',
       useValue: checkDirtyState
